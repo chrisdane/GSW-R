@@ -288,3 +288,9 @@ code {
     background-color: #F5F5F5;
     font-size: 95%;
 }
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
