@@ -1,0 +1,73 @@
+---
+permalink: documentation.html
+layout: default
+title: Documentation
+submenu: documentation
+---
+
+<p>The vignette provides a good starting point.  To get it, install gsw and
+then type <tt>vignette("gsw")</tt> in an R console.</p>
+
+<p>Below is a list of functions provided by gsw.</p>
+
+<ul>
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_adiabatic_lapse_rate_from_CT.html">gsw_adiabatic_lapse_rate_from_CT</a>(list, SA, CT, p)</tt><br> adiabatic lapse rate (note unconventional unit) [ K/Pa ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_alpha.html">gsw_alpha</a>(SA, CT, p)</tt><br> thermal expansion coefficient with respect to Conservative Temperature [ 1/K ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_alpha_on_beta.html">gsw_alpha_on_beta</a>(SA, CT, p)</tt><br> ratio of thermal expansion coefficient to haline contraction coefficient [ (g/kg)/K ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_alpha_wrt_t_exact.html">gsw_alpha_wrt_t_exact</a>(SA, t, p)</tt><br> thermal expansion coefficient with respect to in-situ temperature [ 1/K ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_beta.html">gsw_beta</a>(SA, CT, p)</tt><br> saline contraction coefficient at constant Conservative Temperature [ kg/g ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_beta_const_t_exact.html">gsw_beta_const_t_exact</a>(SA, t, p)</tt><br> saline contraction coefficient at constant in-situ temperature [ kg/g ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_cabbeling.html">gsw_cabbeling</a>(SA, CT, p)</tt><br> cabbeling coefficient with respect to Conservative Temperature [ 1/(K^2) ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_C_from_SP.html">gsw_C_from_SP</a>(SP, t, p)</tt><br> electrical conductivity [ mS/cm ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_cp_t_exact.html">gsw_cp_t_exact</a>(SA, t, p)</tt><br> electrical conductivity [ mS/cm ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_CT_freezing.html">gsw_CT_freezing</a>(SA, p, saturation_fraction)</tt><br> Conservative Temperature at freezing of seawater [ deg C ]. That is, the freezing temperature expressed in terms of Conservative Temperature (ITS-90).  
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_CT_from_pt.html">gsw_CT_from_pt</a>(SA, pt)</tt><br> Conservative Temperature [ deg C ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_CT_from_t.html">gsw_CT_from_t</a>(SA, t, p)</tt><br> Conservative Temperature [ deg C ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_deltaSA_from_SP.html">gsw_deltaSA_from_SP</a>(SP, p, longitude, latitude)</tt><br> deltaSA Absolute Salinity Anomaly  [ g/kg ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_dynamic_enthalpy.html">gsw_dynamic_enthalpy</a>(SA, CT, p)</tt><br> deltaSA Absolute Salinity Anomaly  [ g/kg ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_enthalpy.html">gsw_enthalpy</a>(SA, CT, p)</tt><br> deltaSA Absolute Salinity Anomaly  [ g/kg ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_enthalpy_t_exact.html">gsw_enthalpy_t_exact</a>(SA, t, p)</tt><br> deltaSA Absolute Salinity Anomaly  [ g/kg ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_entropy_from_t.html">gsw_entropy_from_t</a>(SA, t, p)</tt><br> specific entropy [ J/(kg*K) ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_grav.html">gsw_grav</a>(latitude, p)</tt><br> gravitational acceleration [ m/s^2 ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_internal_energy.html">gsw_internal_energy</a>(SA, CT, p)</tt><br> specific internal energy [ J/kg ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_IPV_vs_fNsquared_ratio.html">gsw_IPV_vs_fNsquared_ratio</a>(SA, CT, p, p_ref)</tt><br> a list containing IPV_vs_fNsquared_ratio [ unitless ] and mid-point pressure p_mid [ dbar ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_kappa.html">gsw_kappa</a>(SA, CT, p)</tt><br> isentropic compressibility [ 1/Pa ] (not 1/dbar) 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_kappa_t_exact.html">gsw_kappa_t_exact</a>(SA, t, p)</tt><br> isentropic compressibility [ 1/Pa ] (not 1/dbar) 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_latentheat_evap_CT.html">gsw_latentheat_evap_CT</a>(SA, CT)</tt><br> latent heat of evaporation [ J/kg ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_latentheat_evap_t.html">gsw_latentheat_evap_t</a>(SA, t)</tt><br> latent heat of evaporation [ J/kg ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_latentheat_melting.html">gsw_latentheat_melting</a>(SA, p)</tt><br> latent heat of freezing [ J/kg ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_Nsquared.html">gsw_Nsquared</a>(SA, CT, p, latitude)</tt><br> a list containing N2 [ s^(-2) ] and mid-point pressure p_mid [ dbar ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_pot_rho_t_exact.html">gsw_pot_rho_t_exact</a>(SA, t, p, p_ref)</tt><br> potential density [ kg/m^3 ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_pt0_from_t.html">gsw_pt0_from_t</a>(SA, t, p)</tt><br> potential temperature [ deg C ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_pt_from_CT.html">gsw_pt_from_CT</a>(SA, CT)</tt><br> potential temperature [ deg C ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_pt_from_t.html">gsw_pt_from_t</a>(SA, t, p, p_ref)</tt><br> potential temperature [ deg C ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_rho.html">gsw_rho</a>(SA, CT, p)</tt><br> in-situ density [ kg/m^3 ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_rho_first_derivatives.html">gsw_rho_first_derivatives</a>(SA, CT, p)</tt><br> a list containing drho_dSA [ kg^2/(g m^3) ], drho_dCT [ (kg/(K m^3) ] and drho_dp [ kg/(Pa m^3) ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_rho_t_exact.html">gsw_rho_t_exact</a>(SA, t, p)</tt><br> in-situ density [ kg/m^3 ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_SA_from_rho.html">gsw_SA_from_rho</a>(rho, CT, p)</tt><br> in-situ density [ kg/m^3 ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_SA_from_SP.html">gsw_SA_from_SP</a>(SP, p, longitude, latitude)</tt><br> in-situ density [ kg/m^3 ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_SA_from_Sstar.html">gsw_SA_from_Sstar</a>(Sstar, p, longitude, latitude)</tt><br> in-situ density [ kg/m^3 ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_sigma0.html">gsw_sigma0</a>(SA, CT)</tt><br> potential density anomaly [ kg/m^3 ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_sigma1.html">gsw_sigma1</a>(SA, CT)</tt><br> potential density anomaly [ kg/m^3 ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_sigma2.html">gsw_sigma2</a>(SA, CT)</tt><br> potential density anomaly [ kg/m^3 ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_sigma3.html">gsw_sigma3</a>(SA, CT)</tt><br> potential density anomaly with reference pressure 3000 dbar [ kg/m^3 ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_sigma4.html">gsw_sigma4</a>(SA, CT)</tt><br> potential density anomaly with reference pressure 4000 dbar [ kg/m^3 ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_sound_speed.html">gsw_sound_speed</a>(SA, CT, p)</tt><br> sound speed [ m/s ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_sound_speed_t_exact.html">gsw_sound_speed_t_exact</a>(SA, t, p)</tt><br> sound speed [ m/s ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_specvol.html">gsw_specvol</a>(SA, CT, p)</tt><br> Specific volume (1/density) 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_specvol_anom.html">gsw_specvol_anom</a>(SA, CT, p)</tt><br> Specific volume anomaly [ m^3/kg ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_specvol_t_exact.html">gsw_specvol_t_exact</a>(SA, t, p)</tt><br> Specific volume [ m^3/kg ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_SP_from_C.html">gsw_SP_from_C</a>(C, t, p)</tt><br> Practical salinity. 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_SP_from_SA.html">gsw_SP_from_SA</a>(SA, p, longitude, latitude)</tt><br> Practical salinity. 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_SP_from_SK.html">gsw_SP_from_SK</a>(SK)</tt><br> Practical Salinity (PSS-78) [ unitless ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_SP_from_SR.html">gsw_SP_from_SR</a>(SR)</tt><br> Practical Salinity (PSS-78) [ unitless ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_SP_from_Sstar.html">gsw_SP_from_Sstar</a>(Sstar, p, longitude, latitude)</tt><br> Practical Salinity (PSS-78) [ unitless ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_SR_from_SP.html">gsw_SR_from_SP</a>(SP)</tt><br> Reference Salinity [ g/kg ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_Sstar_from_SA.html">gsw_Sstar_from_SA</a>(SA, p, longitude, latitude)</tt><br> Reference Salinity [ g/kg ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_Sstar_from_SP.html">gsw_Sstar_from_SP</a>(SP, p, longitude, latitude)</tt><br> Reference Salinity [ g/kg ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_t_freezing.html">gsw_t_freezing</a>(SA, p, saturation_fraction)</tt><br> in-situ freezing temperature (ITS-90) [ deg C ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_t_from_CT.html">gsw_t_from_CT</a>(SA, CT, p)</tt><br> in-situ temperature (ITS-90) [ deg C ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_thermobaric.html">gsw_thermobaric</a>(SA, CT, p)</tt><br> thermobaric coefficient wrt Conservative Temperature [ 1/(K Pa) ] 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_Turner_Rsubrho.html">gsw_Turner_Rsubrho</a>(SA, CT, p)</tt><br> a list containing Tu, Rrho, and p_mid 
+<li><tt><a href="http://www.teos-10.org/pubs/gsw/html/gsw_z_from_p.html">gsw_z_from_p</a>(p, lat)</tt><br> height [ m ] 
+</ul>

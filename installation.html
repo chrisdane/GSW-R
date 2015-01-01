@@ -1,0 +1,18 @@
+---
+permalink: installation.html
+layout: default
+title: Installation
+submenu: installation
+---
+
+<p>The stable version of gsw is provided on the R archives.  It is installed from within R, just like other packages.</p>
+
+<p>Users who are set up to build packages (which requires a C compiler, etc)
+may stay at the cutting edge by installing a development version.  This may be
+done as follows, within an R session.</p>
+
+{% highlight R %}
+library(devtools)
+install_github("TEOS-10/GSW-R", "master")
+{% endhighlight %}
+
