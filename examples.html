@@ -1,0 +1,31 @@
+---
+permalink: examples.html
+layout: default
+title: Examples
+submenu: examples
+---
+
+<p>Suppose a water sample is taken at 100dbar pressure, longitude 188 east,
+latitude 4 north, and that it has Practical Salinity 35 and in-situ temperature
+10C on the (ITS-90) scale. To calculate its Absolute Salinity, do as
+follows.</p>
+
+{% highlight R %}
+library(gsw)
+SA <- gsw_SA_from_SP(SP=35, p=100, longitude=188, latitude=4)
+SA
+{% endhighlight %}
+
+<p>Now, we can use this Absolute Salinity, along with in-situ temperature and
+pressure, to calculate the Conservative temperature as follows.</p>
+
+{% highlight R %}
+library(gsw)
+CT <- gsw_CT_from_t(SA=SA, t=10, p=100)
+CT
+{% endhighlight %}
+
+<p>This should give a flavour for the work. See the Documentation tab for a
+list of functions provided in this package, and note that the R help pages
+mainly outline the function arguments, relying on links to the official
+TEOS-10/GSW documentation to educate users further.</p>
