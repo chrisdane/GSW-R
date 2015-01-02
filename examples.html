@@ -5,6 +5,8 @@ title: Examples
 submenu: examples
 ---
 
+<p><b>Using gsw alone.</b></p>
+
 <p>Suppose a CTD instrument lowered in the sea at 188E and 4N measures
 Practical Salinity to be 35 and in-situ temperature 10C (ITS-90) at pressure
 100dbar. Then the following calculates the Absolute Salinity:</p>
@@ -21,19 +23,21 @@ temperature:</p>
 CT <- gsw_CT_from_t(SA=SA, t=10, p=100)
 {% endhighlight %}
 which sets <code>CT</code> to 9.978249 degC. Now, density and
-surface-referenced potential density can be calculated as follows.
+surface-referenced potential density can be calculated with
 {% highlight R %}
 gsw_rho(SA=SA, CT=CT, p=100)
 gsw_pot_rho_t_exact(SA=SA, t=10, p=100, p_ref=0)
 {% endhighlight %}
-which yields 1027.407 kg/m<sup>3</sup> and 1026.956 kg/m<sup>3</sup>, respectively.</p>
+yielding 1027.407 kg/m<sup>3</sup> and 1026.956 kg/m<sup>3</sup>, respectively.</p>
 
 <p>This is just a small sampling of what gsw can do; see the 
 <a href="http://teos-10.github.io/GSW-R/documentation.html">Documentation
 tab</a> for a list of functions provided in this package, and the package
 documentation and vignette for more information.</p>
 
-<p>Importantly, the gsw system is deeply integrated into the 
+<p><b>Using gsw within oce.</b></p>
+
+<p>Gsw is integrated deeply into the 
 <a href="http://dankelley.github.io/oce/">oce package</a>.  It can be selected
 as an option to most functions. For example, a TS diagram in gsw convention can
 be created as follows.</p>
