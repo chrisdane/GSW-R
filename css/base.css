@@ -284,6 +284,11 @@ pre {
     word-wrap: break-word;
 }
 
+tt {
+    font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    font-size: 95%;
+}
+
 code {
     font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
     background-color: #F5F5F5;
