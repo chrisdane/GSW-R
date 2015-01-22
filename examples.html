@@ -15,14 +15,14 @@ Practical Salinity to be 35 and in-situ temperature 10C (ITS-90) at pressure
 library(gsw)
 SA <- gsw_SA_from_SP(SP=35, p=100, longitude=188, latitude=4)
 {% endhighlight %}
-which sets <code>SA</code> to 35.16555.  This value may be used along with
+which sets <code>SA</code> to 35.16555 g/kg.  This value may be used along with
 in-situ temperature and pressure, to calculate the Conservative
-temperature:</p>
+Temperature:</p>
 
 {% highlight R %}
 CT <- gsw_CT_from_t(SA=SA, t=10, p=100)
 {% endhighlight %}
-which sets <code>CT</code> to 9.978249 degC. Now, density and
+which sets <code>CT</code> to 9.978249 &#8451;. Now, density and
 surface-referenced potential density can be calculated with
 {% highlight R %}
 gsw_rho(SA=SA, CT=CT, p=100)
