@@ -1,24 +1,3 @@
----
-permalink: documentation.html
-layout: default
-title: Documentation
-submenu: documentation
----
-
-<p>The official vignette provides a good starting point.  To get it, install
-gsw and then type <code>vignette("gsw")</code> in an R console. Alternatively,
-<a href="gsw.pdf">click here</a> to get a vignette for the development version.
-</p>
-
-<p>Below is a list of functions provided by gsw. The links under the function
-names connect to the relevant TEOS-10 documentation. Note that the function
-names match those used in the Matlab version, and that the arguments also match
-except that <tt>longitude</tt> and <tt>latitude</tt> are used instead of
-abbreviations.</p>
-
-<!-- Next is created by   R --slave < gsw-create-function-list.R -->
-
-
 <ul>
 <li><code><a href="http://www.teos-10.org/pubs/gsw/html/gsw_adiabatic_lapse_rate_from_CT.html">gsw_adiabatic_lapse_rate_from_CT(SA, CT, p)</code> 
 <li><code><a href="http://www.teos-10.org/pubs/gsw/html/gsw_adiabatic_lapse_rate_ice.html">gsw_adiabatic_lapse_rate_ice(t, p)</code> 
