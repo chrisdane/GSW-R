@@ -5,7 +5,7 @@ functions <- functions[-grep("argfix", functions)]
 names <- gsub(" .*", "", functions)
 args <- gsub(".*<-\\s*function","", functions)
 urls <- paste("http://www.teos-10.org/pubs/gsw/html/", names, ".html", sep="")
-items <- paste('<li><code><a href="', urls, "\">", names, args, "</code>", sep="")
+items <- paste('<li><code><a href="', urls, "\">", names, args, "</a></code>", sep="")
 cat("<ul>\n")
 for (item in items)
     cat(item, "\n")
