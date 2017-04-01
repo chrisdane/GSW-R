@@ -1,266 +1,255 @@
-/* dankelley.github.io/oce */
-html {
-    height:100%;
-    width: 960px; 
-}
-
-a, a:visited {
-    color: #0000FF;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: red;
-}
-
-/* tag links are styled differently */
-a.tag:link, a.tag:visited {
-    color: blue;
-}
-
-a.tag:hover {
-    color: red;
-}
-
-div.topnav {
-    font-size:120%;
-    margin-left: 0px;
-    /*margin-top: -13px; /* FIXME: why do we need this? */
-}
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-    font-family: helvetica,arial,freesans,clean,sans-serif;
-    font-size:14px;
-    color: #444444;
-    background-color:white;
-    line-height: 2.5ex;
-    margin:0;
-    margin-top:0;
-    padding-top:0;
+  padding:50px;
+  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#777;
+  font-weight:300;
 }
 
-p {
-    margin-left: 0.1em;
-    margin-right: 0.1em;
+h1, h2, h3, h4, h5, h6 {
+  color:#222;
+  margin:0 0 20px;
 }
 
-tt {
-    font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
 }
 
-code {
-    font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-}
-
-/* <table class='highlighttable'><tr><td class='linenos'><div class='linenodiv'><pre><code class='r'> */
-
-table.highlighttable tr td.linenos div.linenodiv pre code.r {
-    background-color: white;
-}
-table.highlighttable tr td.linenos div.linenodiv pre {
-    background-color: white;
-    border: none;
-}
-
-code.r {
-    color:brown;
-}
-
-pre {
-    padding: 2px;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-    background-color: #F5F5F5;
-    font-weight: 400;
-    font-size: 95%;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
-div.slug {
-    margin-left: 3em;
-    color: black;
-    font-size:90%;
-    margin-bottom:0ex;
-}
-div.post_title {
-    font-size:160%;
-    line-height:110%;
-    font-weight:400;
-    color:black;
-    line-height:140%;
-    margin-left: 1em;
-    margin-top: 1ex;
-    margin-bottom: 0ex;
-}
-
-span.post_tags, span.post_date, span.post_summary {
-    margin-left: 0ex;
-    margin-bottom: 0ex;
+h1, h2, h3 {
+  line-height:1.1;
 }
 
 h1 {
-    font-size:140%;
-    font-weight:400;
-    line-height:140%;
-    margin-top: 0px;
-    margin-bottom: 0.2ex;
+  font-size:28px;
 }
 
 h2 {
-    font-size:100%;
-    line-height:110%;
-    margin-top: 0.5em;
-    margin-bottom: 0.2em;
+  color:#393939;
 }
 
-h3 {
-    font-size:100%;
-    font-weight:normal;
-    font-style: italic;
-    line-height:100%;
-    margin-left: 0.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0em;
+h3, h4, h5, h6 {
+  color:#494949;
 }
 
-
-
-@media only screen and (max-width: 481px), only screen and (max-device-width: 480px) {
-    body{
-        padding:5px;
-        font: 2em Verdana, Tahoma, Arial, Helvetica, sans-serif;
-    }
-    pre{
-        font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-        background-color: white;
-    }
+a {
+  color:#39c;
+  font-weight:400;
+  text-decoration:none;
 }
 
-
-/* TESTING */
-[class*="span"]{
-    float:left;
-    margin-left:20px;
+a small {
+  font-size:11px;
+  color:#777;
+  margin-top:-0.6em;
+  display:block;
 }
 
-post.count {
-    color: red;
-}
-.span4 { /* for RHS (date, tags, comments) */
-    /*
-    width:300px;
-    background-color: #F0FFFF;
-    */
+.wrapper {
+  width:860px;
+  margin:0 auto;
 }
 
-.span8 { /* for LHS (main content) */
-    /*
-     width:620px;
-     */
+blockquote {
+  border-left:1px solid #e5e5e5;
+  margin:0;
+  padding:0 0 0 20px;
+  font-style:italic;
 }
 
-.navbar {
-    display:block;
-    position:relative;
-    padding:0;
-    top:0px;
-    margin-bottom:0px;
-    right:0px;
-    width:100%;
-    line-height: 100%;
-    margin: 0;
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  color:#333;
+  font-size:12px;
 }
-.navbar ul {
-    padding: 0.6em 0.6em;
-    margin-top:0;
-    list-style: none;
-    /*background-color: #036;*/
-    background-color: #333333;
-    width: 100%;
-    font-weight: normal;
+
+pre {
+  padding:8px 15px;
+  background: #f8f8f8;  
+  border-radius:5px;
+  border:1px solid #e5e5e5;
+  overflow-x: auto;
 }
-.navbar li {
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td {
+  text-align:left;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+}
+
+dt {
+  color:#444;
+  font-weight:700;
+}
+
+th {
+  color:#444;
+}
+
+img {
+  max-width:100%;
+}
+
+header {
+  width:270px;
+  float:left;
+  position:fixed;
+}
+
+header ul {
+  list-style:none;
+  height:40px;
+  
+  padding:0;
+  
+  background: #eee;
+  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  
+  border-radius:5px;
+  border:1px solid #d2d2d2;
+  box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
+  width:270px;
+}
+
+header li {
+  width:89px;
+  float:left;
+  border-right:1px solid #d2d2d2;
+  height:40px;
+}
+
+header ul a {
+  line-height:1;
+  font-size:11px;
+  color:#999;
+  display:block;
+  text-align:center;
+  padding-top:6px;
+  height:40px;
+}
+
+strong {
+  color:#222;
+  font-weight:700;
+}
+
+header ul li + li {
+  width:88px;
+  border-left:1px solid #fff;
+}
+
+header ul li + li + li {
+  border-right:none;
+  width:89px;
+}
+
+header ul a strong {
+  font-size:14px;
+  display:block;
+  color:#222;
+}
+
+section {
+  width:500px;
+  float:right;
+  padding-bottom:50px;
+}
+
+small {
+  font-size:11px;
+}
+
+hr {
+  border:0;
+  background:#e5e5e5;
+  height:1px;
+  margin:0 0 20px;
+}
+
+footer {
+  width:270px;
+  float:left;
+  position:fixed;
+  bottom:50px;
+}
+
+@media print, screen and (max-width: 960px) {
+  
+  div.wrapper {
+    width:auto;
+    margin:0;
+  }
+  
+  header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
+  }
+  
+  header {
+    padding-right:320px;
+  }
+  
+  section {
+    border:1px solid #e5e5e5;
+    border-width:1px 0;
+    padding:20px 0;
+    margin:0 0 20px;
+  }
+  
+  header a small {
     display:inline;
-}
-.navbar li a {
-    color: #999999;
-    text-decoration:none;
-    padding: 0.5em 0.5em;
-    font-weight: 100;
-    /*border-right: 1px solid #fff;*/
-}
-.navbar li a.brand {
-    font-size: 120%;
-}
-.navbar li a:hover {
-    color: #eeeeee;
-}
-.navbar li a.highlight {
-    color: white;
-    background-color: #333333;
+  }
+  
+  header ul {
+    position:absolute;
+    right:50px;
+    top:52px;
+  }
 }
 
-a.pagination { /* Previous Next */
-    text-decoration:none;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    margin-top: 1ex;
-    margin-left:0.5em;
-    margin-right:0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    float:right;
-    font-size:80%;
-    background-color:#AAA;
-    color:#FFF;
-}
-a.pagination:hover {
-    background-color:white;
-    color: #333;
-}
-
-#content {
-    margin-top: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-    background-color: #FFF;
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap:break-word;
+  }
+  
+  header {
+    padding:0;
+  }
+  
+  header ul, header p.view {
+    position:static;
+  }
+  
+  pre, code {
+    word-wrap:normal;
+  }
 }
 
-p.footnote {
-    font-size: 90%;
+@media print, screen and (max-width: 480px) {
+  body {
+    padding:15px;
+  }
+  
+  header ul {
+    display:none;
+  }
 }
 
-/* posts */
-ul.posts {
-    list-style-type: none;
-    margin-bottom: 0em;
-    margin-left: -25px;
+@media print {
+  body {
+    padding:0.4in;
+    font-size:12pt;
+    color:#444;
+  }
 }
-
-ul.posts li {
-    line-height: 1.3em;
-    margin-left: 0em;
-}
-
-ul.posts span {
-    color: #aaa;
-    font-family: Monaco, "Courier New", monospace;
-    font-size: 80%;
-    margin-left: 0;
-}
-
-div.page-header {
-    background-color: #d0d0d0;
-    /*padding: 20px 20px 10px;*/
-    padding: 5px 20px 10px;
-    margin: -20px -20px 00px; /* last was 20px */
-}
-
-img[alt=tg] { border-style: solid; border-color: red, border-width: 2px;}
-
