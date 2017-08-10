@@ -3,3 +3,5 @@ GSW-R.Rproj
 src
 vignettes
 *.swp
+.Rhistory
+R
